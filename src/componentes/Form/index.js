@@ -1,3 +1,4 @@
+import Button from '../Button'
 import DropDown from '../DropDown'
 import TextField from '../TextField'
 import './Form.css'
@@ -37,17 +38,25 @@ const Form = () => {
         'Washington Wizards'
     ]
 
+    const callBack = (event) => {
+        event.preventDefault()
+        console.log('Form has been submitted')
+    }
+
     return (
         <section className="form">
-            <form>
+            <form onSubmit={callBack}>
                 <h2>Fill the blanks to create the player card</h2>
-                <TextField label="Name" placeholder="Enter your name" />
-                <TextField label="Position" placeholder="Enter your position" />
-                <TextField label="High School" placeholder="Enter your high school" />
-                <TextField label="Draft Pick" placeholder="Enter your draft pick number" />
-                <DropDown label="Drafted By" itens={teams}/>
+                <TextField mandatory={true} label="Name" placeholder="Enter your name" />
+                <TextField mandatory={true} label="Position" placeholder="Enter your position(s)" />
+                <TextField mandatory={true} label="High School" placeholder="Enter your high school or previous team" />
+                <TextField mandatory={true} label="Draft Pick" placeholder="Enter your draft pick number or 'Undrafted'" />
+                <DropDown mandatory={true} label="Drafted By" items={teams}/>
                 <TextField label="Image" placeholder="Enter the image address" />
-                <DropDown label="Team" itens={teams}/>
+                <DropDown mandatory={true} label="Team" items={teams}/>
+                <Button>
+                    Create card
+                </Button>
             </form>
         </section>
     )

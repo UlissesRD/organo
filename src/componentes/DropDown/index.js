@@ -1,14 +1,14 @@
 import './DropDown.css'
 
 const DropDown = (props) => {
-    console.log(props.itens)
+    console.log(props.items)
     return (
         <div className='drop-down'>
             <label>
                 {props.label}
             </label>
-            <select>
-                {props.itens.map(item => {
+            <select required>={props.mandatory}
+                {props.items.map(item => {
                     return <option key={item}>{item}</option>
                     })
                 }

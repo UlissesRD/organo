@@ -11,7 +11,7 @@ const Form = (props) => {
     const [highSchool, setHighSchool] = useState('')
     const [draftPick, setDraftPick] = useState('')
     const [draftedBy, setDraftedBy] = useState('')
-    const [image, setImage] = useState('')
+    // const [image, setImage] = useState('')
     const [team, setTeam] = useState('')
 
     const callBack = (event) => {
@@ -22,7 +22,7 @@ const Form = (props) => {
             highSchool,
             draftPick,
             draftedBy,
-            image,
+            // image,
             team
         })
     }
@@ -66,12 +66,7 @@ const Form = (props) => {
                     v={draftedBy}
                     changed={v => setDraftedBy(v)}
                 />
-                <TextField
-                    label="Image"
-                    placeholder="Enter the image address"
-                    v={image}
-                    changed={v => setImage(v)}
-                />
+                
                 <DropDown
                     mandatory={true}
                     label="Team"

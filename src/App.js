@@ -171,7 +171,13 @@ function App() {
       <Banner />
       <Form teams={teams.map(team => team.name)} playerCreated={player => newPlayer(player)} />
 
-      {teams.map(team => <Team key={team.name} name={team.name} color={team.color} championships={team.championships}/>)}
+      {teams.map(team => <Team 
+        key={team.name} 
+        name={team.name} 
+        color={team.color} 
+        championships={team.championships}
+        players={players}
+      />)}
 
     </div>
   );

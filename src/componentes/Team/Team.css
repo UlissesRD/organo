@@ -1,0 +1,30 @@
+.team {
+    text-align: center;
+    padding: 32px;
+    margin: 10px 0;
+    position: relative; /* Adiciona posição relativa para ser o contexto do posicionamento absoluto */
+}
+
+.team-label{
+    display: block;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.team-championships {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    opacity: 0.39;
+    margin-right: 20px;
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    top: 30px; 
+    right: 10px; 
+}
+
+.team-logo {
+    width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; 
+}

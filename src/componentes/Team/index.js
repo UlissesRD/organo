@@ -3,7 +3,7 @@ import './Team.css'
 
 const Team = (props) => {
 
-    const css = {backgroundColor: props.color}
+    const css = { backgroundColor: props.color }
 
     const logoPath = `/imagens/logos/${props.name}.png`;
 
@@ -17,16 +17,18 @@ const Team = (props) => {
                 <h2 className='team-championships'>
                     {props.championships}
                 </h2>
-                {props.players.map(player => <Player 
-                    name={player.name}
-                    position={player.position}
-                    highSchool={player.highSchool}
-                    draftPick={player.draftPick}
-                    draftedBy={player.draftedBy}
+                <div>
+                    {props.players.map(player => <Player
+                        name={player.name}
+                        position={player.position}
+                        highSchool={player.highSchool}
+                        draftPick={player.draftPick}
+                        draftedBy={player.draftedBy}
 
-                />)}
+                    />)}
+                </div>
             </section>
-            
+
         </>
     )
 }

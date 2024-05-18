@@ -176,7 +176,7 @@ function App() {
         name={team.name} 
         color={team.color} 
         championships={team.championships}
-        players={players}
+        players={players.filter(player => player.team == team.name)}
       />)}
 
     </div>

@@ -11,7 +11,6 @@ const Form = (props) => {
     const [highSchool, setHighSchool] = useState('')
     const [draftPick, setDraftPick] = useState('')
     const [draftedBy, setDraftedBy] = useState('')
-    // const [image, setImage] = useState('')
     const [team, setTeam] = useState('')
 
     const callBack = (event) => {
@@ -22,9 +21,13 @@ const Form = (props) => {
             highSchool,
             draftPick,
             draftedBy,
-            // image,
             team
         })
+        setName('')
+        setPosition('')
+        setHighSchool('')
+        setDraftPick('')
+        setDraftedBy('')
     }
 
     return (
@@ -60,13 +63,12 @@ const Form = (props) => {
                     changed={v => setDraftPick(v)}
                 />
                 <DropDown
-                    mandatory={true}
+                    mandatory={false}
                     label="Drafted By"
                     items={props.teams}
                     v={draftedBy}
                     changed={v => setDraftedBy(v)}
                 />
-                
                 <DropDown
                     mandatory={true}
                     label="Team"

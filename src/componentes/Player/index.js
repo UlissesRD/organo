@@ -1,32 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import cheerio from 'cheerio';
-import './Player.css';
 
-// Função para obter URL da imagem do jogador
-async function obterURLdaImagem(nomeJogador) {
-    try {
-        const nomeFormatado = nomeJogador.toLowerCase().replace(/\s/g, '-');
-        const urlJogador = `https://www.nba.com/player/${nomeFormatado}`;
-        const response = await axios.get(urlJogador);
-        const $ = cheerio.load(response.data);
-        const urlImagem = $('meta[property="og:image"]').attr('content');
-        return urlImagem;
-    } catch (error) {
-        console.error('Erro ao obter URL da imagem:', error);
-        return null;
-    }
-}
+import NBA from 'nba';
+
+import './Player.css';
 
 const Player = ({ name, position, highSchool, draftPick, draftedBy }) => {
     const [image, setImage] = useState('');
 
     useEffect(() => {
-        obterURLdaImagem(name).then(url => {
-            if (url) {
-                setImage(url);
-            }
-        });
+        const findPlayer = NBA.findPlayer(name);
+
+        if (!findPlayer) {
+            console.error(`${name} não encontrado na API`);
+            setImage(`/imagens/playersUpdate/2021/${name}.png` || `/imagens/playersUpdate/2022/${name}.png` || `/imagens/playersUpdate/2023/${name}.png`);
+        } else {
+            const playerId = findPlayer.playerId;
+            setImage(`https://cdn.nba.com/headshots/nba/latest/1040x760/${playerId}.png`);
+        }
     }, [name]);
 
     return (

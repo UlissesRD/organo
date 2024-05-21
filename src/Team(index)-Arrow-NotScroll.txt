@@ -1,0 +1,81 @@
+import Player from '../Player';
+import './Team.css'
+import React from 'react';
+
+const Team = (props) => {
+
+    const css = { backgroundColor: props.color }
+
+    const logoPath = `/imagens/logos/${props.name}.png`;
+
+    const playersContainerRef = React.useRef(null);
+
+    const scrollLeft = () => {
+        if (playersContainerRef.current) {
+            playersContainerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    };
+
+    const scrollRight = () => {
+        if (playersContainerRef.current) {
+            playersContainerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    };
+
+    return (
+        <>
+            <label className='team-label'>
+                {props.name}
+            </label>
+            <section className='team' style={css}>
+                <img src={logoPath} alt={`Logo do ${props.name}`} className='team-logo' />
+                <h2 className='team-championships'>
+                    {props.championships}
+                </h2>
+                <button className="arrow left" onClick={scrollLeft}>◀</button>
+                <div className='players' ref={playersContainerRef}>
+                    {props.players.map(player => (
+                        <div className='player' key={player.name}>
+                            <Player
+                                name={player.name}
+                                position={player.position}
+                                highSchool={player.highSchool}
+                                draftPick={player.draftPick}
+                                draftedBy={player.draftedBy}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <button className="arrow right" onClick={scrollRight}>▶</button>
+            </section>
+
+        </>
+    )
+}
+
+export default Team
+
+
+
+
+------------------------ ADD THIS TO THE .CSS -------------------------------
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}

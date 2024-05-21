@@ -17,8 +17,8 @@ const Team = (props) => {
                 <h2 className='team-championships'>
                     {props.championships}
                 </h2>
-                <div>
-                    {props.players.map(player => <Player
+                <div className='players' key={props.name}>
+                    {props.players.map(player => <Player key = {player.name}
                         name={player.name}
                         position={player.position}
                         highSchool={player.highSchool}

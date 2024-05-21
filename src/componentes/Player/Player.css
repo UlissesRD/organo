@@ -2,9 +2,6 @@
     width: 280px;
 }
 
-.player .header {
-    border-radius: 10px 10px 0px 0px;
-}
 .player img {
     width: 240px;
     position: relative;
@@ -14,9 +11,10 @@
 .player .footer {
     background: #FFFFFF;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 0px 0px 10px 10px;
-    padding-top: 90px;
-    padding-bottom: 40px;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: block;
 }
 
 .player .footer h4 {

@@ -162,7 +162,8 @@ function App() {
   const [players, setPlayers] = useState([])
 
   const newPlayer = (player) => {
-    console.log(player)
+    //debugger
+    //console.log(player)
     setPlayers([...players, player])
   }
 

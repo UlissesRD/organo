@@ -7,6 +7,7 @@ const DropDown = (props) => {
                 {props.label}
             </label>
             <select onChange={event => props.changed(event.target.value)} required={props.mandatory} value={props.v}>
+                <option value="Select a Team"></option>
                 {props.items.map(item => {
                     return <option key={item}>{item}</option>
                 })}

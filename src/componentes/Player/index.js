@@ -12,7 +12,7 @@ const Player = ({ name, position, highSchool, draftPick, draftedBy }) => {
 
         if (!findPlayer) {
             console.error(`${name} não encontrado na API`);
-            setImage(`/imagens/playersUpdate/2021/${name}.png` || `/imagens/playersUpdate/2022/${name}.png` || `/imagens/playersUpdate/2023/${name}.png`);
+            setImage(`/imagens/playersUpdate/${name}.png`);
         } else {
             const playerId = findPlayer.playerId;
             setImage(`https://cdn.nba.com/headshots/nba/latest/1040x760/${playerId}.png`);

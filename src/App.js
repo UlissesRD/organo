@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Form from './componentes/Form';
 import Team from './componentes/Team';
+import Footer from './componentes/Footer';
 
 function App() {
 
@@ -180,6 +181,7 @@ function App() {
         players={players.filter(player => player.team == team.name)}
       />)}
 
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,15 @@
 import './Team.css'
+import NBA from 'nba'; 
 
 const Team = (props) => {
 
     const css = {backgroundColor: props.color}
 
-    const logoPath = `/imagens/logos/${props.name}.png`;
+    const teamId = NBA.teamIdFromName(props.name);
+
+    const logoPath = `https://cdn.nba.com/logos/nba/${teamId}/global/L/logo.svg`;
+
+    const sortedPlayers = props.players.sort((a,b) => a.name.localeCompare(b.name));
 
     return (
         <>
@@ -16,6 +21,19 @@ const Team = (props) => {
                 <h2 className='team-championships'>
                     {props.championships}
                 </h2>
+<<<<<<< Updated upstream
+=======
+                <div className='players' key={props.name}>
+                    {sortedPlayers.map(player => <Player key = {player.name}
+                        name={player.name}
+                        position={player.position}
+                        highSchool={player.highSchool}
+                        draftPick={player.draftPick}
+                        draftedBy={player.draftedBy}
+
+                    />)}
+                </div>
+>>>>>>> Stashed changes
             </section>
             
         </>

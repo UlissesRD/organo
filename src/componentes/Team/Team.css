@@ -23,7 +23,11 @@
 }
 
 .team-logo {
+<<<<<<< Updated upstream
     width: 200px; 
+=======
+    width: 280px; 
+>>>>>>> Stashed changes
     height: auto;
     display: block;
     margin: 0 auto 10px; 

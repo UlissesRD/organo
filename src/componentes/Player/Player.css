@@ -5,7 +5,7 @@
 .player img {
     width: 240px;
     position: relative;
-    bottom: -100px;
+    bottom: -50px;
 }
 
 .player .footer {

@@ -1,4 +1,4 @@
-# 𝕆𝕣𝕘𝕒𝕟𝕠 ℕ𝔹𝔸 <img src="public/imagens/logonba.png" alt="Logo do Projeto" width="100" />
+# 𝕆𝕣𝕘𝕒𝕟𝕠 ℕ𝔹𝔸 <img src="public/imagens/logonba.png" alt="Logo do Projeto" width="25" />
 
 
 

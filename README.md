@@ -30,7 +30,9 @@ If you do so, please contact me, my Instagram and email are listed below in this
 
 ### Tools and Language Used ✍🏽
 
-- Tool: VS Code 
+- Tool: VS Code
+- Framework: React
+- Deploy: Vercel
 
 - Language: JavaScript and CSS
 

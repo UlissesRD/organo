@@ -1,6 +1,8 @@
 # 𝕆𝕣𝕘𝕒𝕟𝕠 ℕ𝔹𝔸 <img src="public/imagens/logonba.png" alt="Logo do Projeto" width="13" />
 
+A desktop web application that enables you to register players for NBA teams. These players can be associated to their actual teams or not. 
 
+For instance, if you wish to organize a 2K tournament with your friends and want to draft all league players anew to form your custom roster, the NBA Organo can fulfill your requirements.
 
 ## Helping Tool 🔧
 
@@ -10,7 +12,15 @@ If you don't have an IDE, you can choose one according to your preference, but I
 
 ### Operation⚙️
 
+My version is up at: https://organonba.vercel.app/
 
+Once in the application, you need to enter the player's name, position(s), where he went to high school, his draft pick number, the team that selected him, and the team you want to associate him with.
+
+If no team selected the player, you can put 'Undrafted' in the draft pick blank and leave the 'Drafted By' blank.
+
+After filling out the form, you can click the 'Create card' button, and it will associate the player with the selected team.
+
+Finally, you can scroll down to find the team and the player(s) associated with it
 
 ### Contribution 🤝🏽
 
@@ -28,6 +38,7 @@ If you do so, please contact me, my Instagram and email are listed below in this
 
 Pedro Ulisses Reis de Dorneles
 - Instagram: [@pedro_ulissesrd](https://www.instagram.com/pedro_ulissesrd/)
+- LinkedIn: [Pedro Ulisses Reis de Dorneles](https://www.linkedin.com/in/pedro-ulisses-reis-de-dorneles-6047a626b/)
 
 ### Last Version/Update Date 📅
 

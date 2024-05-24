@@ -1,4 +1,4 @@
-# 𝕆𝕣𝕘𝕒𝕟𝕠 ℕ𝔹𝔸 ![Logo do Projeto](imagens/logonba.png)
+# 𝕆𝕣𝕘𝕒𝕟𝕠 ℕ𝔹𝔸 ![Logo do Projeto](public/imagens/logonba.png)
 
 
 

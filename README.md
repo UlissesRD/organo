@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 𝕆𝕣𝕘𝕒𝕟𝕠 ℕ𝔹𝔸 <img src="public/imagens/logonba.png" alt="Logo do Projeto" width="13" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A desktop web application that enables you to register players for NBA teams. These players can be associated to their actual teams or not. 
 
-## Available Scripts
+For instance, if you wish to organize a 2K tournament with your friends and want to draft all league players anew to form your custom roster, the NBA Organo can fulfill your requirements.
 
-In the project directory, you can run:
+## Helping Tool 🔧
 
-### `npm start`
+If you don't have an IDE, you can choose one according to your preference, but I recommend one of these two:
+- IntelliJ: https://www.jetbrains.com/pt-br/idea/download/?section=windows
+- VSCode: https://code.visualstudio.com/download
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Operation⚙️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+My version is up at: https://organonba.vercel.app/
 
-### `npm test`
+Once in the application, you need to enter the player's name, position(s), where he went to high school, his draft pick number, the team that selected him, and the team you want to associate him with.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If no team selected the player, you can put 'Undrafted' in the draft pick blank and leave the 'Drafted By' blank.
 
-### `npm run build`
+After filling out the form, you can click the 'Create card' button, and it will associate the player with the selected team.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Finally, you can scroll down to find the team and the player(s) associated with it
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Contribution 🤝🏽
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you wish to contribute to the code, feel free to download a copy to your device and do your part!
 
-### `npm run eject`
+If you do so, please contact me, my Instagram and email are listed below in this document.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Tools and Language Used ✍🏽
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Tool: VS Code 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Language: JavaScript and CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Author 🙋🏽‍♂️
 
-## Learn More
+Pedro Ulisses Reis de Dorneles
+- Instagram: [@pedro_ulissesrd](https://www.instagram.com/pedro_ulissesrd/)
+- LinkedIn: [Pedro Ulisses Reis de Dorneles](https://www.linkedin.com/in/pedro-ulisses-reis-de-dorneles-6047a626b/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Last Version/Update Date 📅
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+05/24/2024
 
-### Code Splitting
+### Support ✉️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For support, please send an email to pedroulissesrd@gmail.com.
 
-### Analyzing the Bundle Size
+### License ©️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Copyright (c) <2024><PedroUlissesReisDeDorneles>
 
-### Making a Progressive Web App
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, and/or distribute. Selling copies of the software without the creator's consent is not allowed. Any of the cases listed above are subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- The copyright notice above and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+FAILURE TO FOLLOW THE ITEMS ABOVE, AUTHORS OR COPYRIGHT HOLDERS SHALL HAVE THE RIGHT TO, FOR ANY CLAIM, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

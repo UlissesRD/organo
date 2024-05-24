@@ -1,11 +1,16 @@
 import Player from '../Player';
 import './Team.css'
+import NBA from 'nba'; 
 
 const Team = (props) => {
 
-    const css = { backgroundColor: props.color }
+    const css = {backgroundColor: props.color}
 
-    const logoPath = `/imagens/logos/${props.name}.png`;
+    const teamId = NBA.teamIdFromName(props.name);
+
+    const logoPath = `https://cdn.nba.com/logos/nba/${teamId}/global/L/logo.svg`;
+
+    const sortedPlayers = props.players.sort((a,b) => a.name.localeCompare(b.name));
 
     return (
         <>
@@ -18,7 +23,7 @@ const Team = (props) => {
                     {props.championships}
                 </h2>
                 <div className='players' key={props.name}>
-                    {props.players.map(player => <Player key = {player.name}
+                    {sortedPlayers.map(player => <Player key = {player.name}
                         name={player.name}
                         position={player.position}
                         highSchool={player.highSchool}
@@ -28,7 +33,7 @@ const Team = (props) => {
                     />)}
                 </div>
             </section>
-
+            
         </>
     )
 }

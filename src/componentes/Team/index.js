@@ -21,8 +21,6 @@ const Team = (props) => {
                 <h2 className='team-championships'>
                     {props.championships}
                 </h2>
-<<<<<<< Updated upstream
-=======
                 <div className='players' key={props.name}>
                     {sortedPlayers.map(player => <Player key = {player.name}
                         name={player.name}
@@ -33,7 +31,6 @@ const Team = (props) => {
 
                     />)}
                 </div>
->>>>>>> Stashed changes
             </section>
             
         </>

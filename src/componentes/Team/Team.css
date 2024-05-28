@@ -44,3 +44,9 @@
     flex: 0 0 auto; 
     margin-right: 10px; 
 }
+
+.input-color {
+    position:absolute;
+    top: 20px;
+    right: 50px;
+}

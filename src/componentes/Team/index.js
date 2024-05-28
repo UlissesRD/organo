@@ -18,19 +18,23 @@ const Team = (props) => {
                 {props.name}
             </label>
             <section className='team' style={css}>
+                <input onChange={event => props.changeColor(event.target.value, props.id)} value={props.color} type='color' className='input-color' />
                 <img src={logoPath} alt={`Logo do ${props.name}`} className='team-logo' />
                 <h2 className='team-championships'>
                     {props.championships}
                 </h2>
                 <div className='players' key={props.name}>
-                    {sortedPlayers.map(player => <Player key = {player.name}
+                    {sortedPlayers.map((player) => {
+                        return <Player key = {player.name}
+                        player={player}
                         name={player.name}
                         position={player.position}
                         highSchool={player.highSchool}
                         draftPick={player.draftPick}
                         draftedBy={player.draftedBy}
-
-                    />)}
+                        deleting={props.deleting}
+                    />
+                    })}
                 </div>
             </section>
             

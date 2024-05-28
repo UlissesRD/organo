@@ -4,7 +4,9 @@ import NBA from 'nba';
 
 import './Player.css';
 
-const Player = ({ name, position, highSchool, draftPick, draftedBy }) => {
+import { FaTrash } from "react-icons/fa";
+
+const Player = ({ id, name, position, highSchool, draftPick, draftedBy, deleting }) => {
     const [image, setImage] = useState('');
 
     useEffect(() => {
@@ -21,6 +23,12 @@ const Player = ({ name, position, highSchool, draftPick, draftedBy }) => {
 
     return (
         <div className='player'>
+            <FaTrash 
+                size={25} 
+                color='white' 
+                className='delete' 
+                onClick={() => deleting(id)}
+            />
             <div className='header'>
                 <img src={image} alt={name}/>
             </div>

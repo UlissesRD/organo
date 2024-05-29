@@ -8,6 +8,7 @@ const Team = (props) => {
 
     const teamId = NBA.teamIdFromName(props.name);
 
+    //const logoPath = teamId ? `https://cdn.nba.com/logos/nba/${teamId}/global/L/logo.svg` : props.logo;
     const logoPath = `https://cdn.nba.com/logos/nba/${teamId}/global/L/logo.svg`;
 
     const sortedPlayers = props.players.sort((a,b) => a.name.localeCompare(b.name));

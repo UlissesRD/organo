@@ -212,10 +212,19 @@ function App() {
     }))
   }
 
+  //function saveTeam(newTeam){
+  //  setTeams([...teams, {...newTeam, id: uuidv4()}])
+  //}
+
   return (
     <div className="App">
       <Banner />
-      <Form teams={teams.map(team => team.name)} playerCreated={player => newPlayer(player)} />
+
+      <Form 
+        //saveTeam={saveTeam}
+        teams={teams.map(team => team.name)} 
+        playerCreated={player => newPlayer(player)} 
+      />
 
       {teams.map(team => <Team 
         changeColor={changeTeamColor}

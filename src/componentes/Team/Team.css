@@ -24,7 +24,7 @@
 }
 
 .team-logo {
-    width: 220px; 
+    width: 250px; 
     height: auto;
     display: block;
     margin: 0 auto 10px; 
@@ -43,4 +43,18 @@
 .player {
     flex: 0 0 auto; 
     margin-right: 10px; 
+}
+
+.input-color {
+    position:absolute;
+    top: 20px;
+    right: 50px;
+}
+
+@media (max-width: 930px) {
+    .team-championships {
+        position: static; /* Make the position static so it flows with the content */
+        margin: 20px auto 0; /* Center it and add some margin */
+        display: block; /* Ensure it's displayed as a block element */
+    }
 }

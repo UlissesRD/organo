@@ -1,11 +1,12 @@
 .player {
     width: 280px;
+    position: relative;
 }
 
 .player img {
     width: 240px;
     position: relative;
-    bottom: -100px;
+    bottom: -50px;
 }
 
 .player .footer {
@@ -30,4 +31,10 @@
     line-height: 22px;
     color: #212121;
     padding: 0 16px;
+}
+
+.delete {
+    position: absolute;
+    right: 0px;
+    top: 30px;
 }

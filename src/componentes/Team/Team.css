@@ -50,3 +50,12 @@
     top: 20px;
     right: 50px;
 }
+
+/* Add media query for smaller screens */
+@media (max-width: 930px) {
+    .team-championships {
+        position: static; /* Make the position static so it flows with the content */
+        margin: 20px auto 0; /* Center it and add some margin */
+        display: block; /* Ensure it's displayed as a block element */
+    }
+}

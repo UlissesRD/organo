@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Button from '../Button'
 import DropDown from '../DropDown'
-import TextField from '../TextField'
+import Field from '../Field'
 import './Form.css'
 
 const Form = (props) => {
@@ -62,28 +62,28 @@ const Form = (props) => {
         <section className="form-container">
             <form className="form" onSubmit={callBack}>
                 <h2>Fill the blanks to create the player card</h2>
-                <TextField
+                <Field
                     mandatory={true}
                     label="Name"
                     placeholder="Enter the player's name"
                     v={name}
                     changed={v => setName(v)}
                 />
-                <TextField
+                <Field
                     mandatory={true}
                     label="Position"
                     placeholder="Enter the player's position(s)"
                     v={position}
                     changed={v => setPosition(v)}
                 />
-                <TextField
+                <Field
                     mandatory={true}
                     label="High School"
                     placeholder="High school or last team before being drafted"
                     v={highSchool}
                     changed={v => setHighSchool(v)}
                 />
-                <TextField
+                <Field
                     mandatory={true}
                     label="Draft Pick"
                     placeholder="Draft pick number or 'Undrafted'"
@@ -123,15 +123,16 @@ const Form = (props) => {
             }}>
 
                 <h2>Fill the blanks to create a new team</h2>
-                <TextField
+                <Field
                     mandatory={true}
                     label="Name"
                     placeholder="Enter the team's name"
                     v={teamName}
                     changed={v => setTeamName(v)}
                 />
-                <TextField
+                <Field
                     mandatory={true}
+                    type="color"
                     label="Background color"
                     placeholder="Enter the team's primary color"
                     v={color}

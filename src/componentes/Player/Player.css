@@ -6,7 +6,7 @@
 .player img {
     width: 240px;
     position: relative;
-    bottom: -50px;
+    bottom: -100px;
 }
 
 .player .footer {
@@ -36,5 +36,5 @@
 .delete {
     position: absolute;
     right: 0px;
-    top: 30px;
+    top: 50px;
 }

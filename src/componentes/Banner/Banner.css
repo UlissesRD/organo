@@ -12,3 +12,27 @@
     height: auto; /* Mantém a proporção da imagem */
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
+
+@media (max-width: 1200px) {
+    .banner .img2 {
+        width: 600px; /* Ajuste a largura conforme necessário */
+    }
+}
+
+@media (max-width: 992px) {
+    .banner .img2 {
+        width: 500px; /* Ajuste a largura conforme necessário */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .img2 {
+        width: 400px; /* Ajuste a largura conforme necessário */
+    }
+}
+
+@media (max-width: 576px) {
+    .banner .img2 {
+        width: 300px; /* Ajuste a largura conforme necessário */
+    }
+}

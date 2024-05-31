@@ -42,4 +42,5 @@
 
 .fav {
     margin-top: 20px ;
+    cursor: pointer;
 }

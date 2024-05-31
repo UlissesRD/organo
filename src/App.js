@@ -197,7 +197,7 @@ function App() {
   const newPlayer = (player) => {
     //debugger
     //console.log(player)
-    setPlayers([...players, player])
+    setPlayers([...players, {...player, id: uuidv4()}])
   }
 
   function playerDelete(id) {

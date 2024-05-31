@@ -217,6 +217,15 @@ function App() {
   //  setTeams([...teams, {...newTeam, id: uuidv4()}])
   //}
 
+  function playerFavorite(id){
+    setPlayers(players.map(player => {
+      if (player.id === id) {
+        player.favorite = !player.favorite
+      }
+      return player
+    }))
+  }
+
   return (
     <div className="App">
       <Banner />
@@ -236,6 +245,7 @@ function App() {
         championships={team.championships}
         players={players.filter(player => player.team === team.name)}
         deleting={playerDelete}
+        onFav={playerFavorite}
       />)}
 
       <Footer />

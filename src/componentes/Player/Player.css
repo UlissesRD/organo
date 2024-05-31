@@ -37,4 +37,9 @@
     position: absolute;
     right: 0px;
     top: 50px;
+    cursor: pointer;
+}
+
+.fav {
+    margin-top: 20px ;
 }

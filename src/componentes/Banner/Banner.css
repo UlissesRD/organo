@@ -8,31 +8,31 @@
 }
 
 .banner .img2 {
-    width: 700px; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    width: 700px; 
+    height: auto; 
+    margin: 0 auto; 
 }
 
 @media (max-width: 1200px) {
     .banner .img2 {
-        width: 600px; /* Ajuste a largura conforme necessário */
+        width: 600px; 
     }
 }
 
 @media (max-width: 992px) {
     .banner .img2 {
-        width: 500px; /* Ajuste a largura conforme necessário */
+        width: 500px; 
     }
 }
 
 @media (max-width: 768px) {
     .banner .img2 {
-        width: 400px; /* Ajuste a largura conforme necessário */
+        width: 400px; 
     }
 }
 
 @media (max-width: 576px) {
     .banner .img2 {
-        width: 300px; /* Ajuste a largura conforme necessário */
+        width: 300px; 
     }
 }

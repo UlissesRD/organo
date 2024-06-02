@@ -17,3 +17,55 @@
     margin-right: 0;
 }
 
+.footer .logo img {
+    width: 280px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .footer .logo img {
+        width: 180px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .footer .logo img {
+        width: 150px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .logo img {
+        width: 120px; 
+        align-items: center;
+    }
+
+    .footer p{
+        font-size: 12px;
+    }
+
+    .footer ul li {
+        width: 25px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .footer .logo img {
+        width: 100px; 
+        align-items: center;
+    }
+
+    .footer p{
+        font-size: 10px;
+    }
+
+    .footer ul li {
+        width: 20px; /* Ajuste conforme necessário */
+    }
+}

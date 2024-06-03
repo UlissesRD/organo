@@ -5,17 +5,17 @@ const Footer = () => {
         <section>
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/pedro-ulisses-reis-de-dorneles-6047a626b" target="_blank">
+                    <a href="https://www.linkedin.com/in/pedro-ulisses-reis-de-dorneles-6047a626b" target="_blank" rel="noreferrer">
                         <img src="/imagens/li.png" alt="" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/UlissesRD" target="_blank">
+                    <a href="https://github.com/UlissesRD" target="_blank" rel="noreferrer">
                         <img src="/imagens/gh.png" alt="" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/pedro_ulissesrd/" target="_blank">
+                    <a href="https://www.instagram.com/pedro_ulissesrd/" target="_blank" rel="noreferrer">
                         <img src="/imagens/ig.png" alt="" />
                     </a>
                 </li>

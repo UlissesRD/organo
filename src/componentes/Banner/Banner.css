@@ -4,7 +4,7 @@
 }
 
 .banner img {
-    max-width: 100%;
+    width: 900px;
     height: auto;
     display: inline-block;
 }
@@ -16,30 +16,50 @@
 }
 
 @media (max-width: 1600px) {
+    .banner img {
+        width: 900px; 
+    }
+
     .banner .img2 {
         width: 600px; 
     }
 }
 
 @media (max-width: 1200px) {
+    .banner img {
+        width: 800px; 
+    }
+
     .banner .img2 {
         width: 500px; 
     }
 }
 
 @media (max-width: 992px) {
+    .banner img {
+        width: 700px; 
+    }
+
     .banner .img2 {
         width: 400px; 
     }
 }
 
 @media (max-width: 768px) {
+    .banner img {
+        width: 600px; 
+    }
+
     .banner .img2 {
         width: 400px; 
     }
 }
 
 @media (max-width: 576px) {
+    .banner img {
+        width: 500px; 
+    }
+
     .banner .img2 {
         width: 300px; 
     }

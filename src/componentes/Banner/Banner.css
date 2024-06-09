@@ -1,22 +1,35 @@
 .banner {
     background-color: #022852;
     text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .banner img {
     max-width: 100%;
     height: auto;
+    display: inline-block;
 }
 
 .banner .img2 {
     width: 699px;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+    .banner .img2 {
+        width: 600px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner .img2 {
+        width: 500px; 
+    }
 }
 
 @media (max-width: 992px) {
     .banner .img2 {
-        width: 500px; 
+        width: 400px; 
     }
 }
 
